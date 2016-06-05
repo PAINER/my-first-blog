@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.utils import timezone
 from blog.models import Post
 from django.http.response import HttpResponse
-from jinja2 import Template
 from django.template.loader import get_template
 from django.template import context
 import blog
