@@ -5,8 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Burned</title>
+<title>Контакты</title>
 <link href="{% static "css/default.css" %}" rel="stylesheet" type="text/css" />
+<style>
+   body {
+    background-attachment: fixed;
+   }
+  </style>
 </head>
 <body>
 <div id="outer">
@@ -16,25 +21,23 @@
   </div>
   <div id="menu">
     <ul>
-      <li class="first"><a href="/" accesskey="1">Главная</a></li>
-      <li><a href="#" accesskey="2">Практика</a></li>
-      <li><a href="#" accesskey="3">Галерея</a></li>
-      <li><a href="#" accesskey="4">Контакты</a></li>
-      <li><a href="#" accesskey="5">Услуги</a></li>
+      <li><a href="/" accesskey="1">Главная</a></li>
+      <li><a href="/edit/" accesskey="2">Практика</a></li>
+      <li><a href="/contacts/" accesskey="3">Контакты</a></li>
+      <li><a href="/galerey/" accesskey="4">Галерея</a></li>
+      <li><a href="/services/" accesskey="5">Услуги</a></li>
     </ul>
   </div>
   <div id="content">
     <div id="xbg1"></div>
     <div id="primaryContentContainer">
       <div id="primaryContent">
-        <h2>Welcome to Sitename.com!</h2>
-        {% for article in articles %}
-<h6 align="right"> Дата публикации: {{ article.article_date }}</h6> 
-<h2 align="center"> <a href="/articles/get/{{ article.id }}"> {{ article.article_title }} </a></h4>
-<h4> {{ article.article_text }} </h4>
-<p> <a href="/articles/addlike/{{ article.id }}/"></a> {{ article.article_likes }} </p>
-     <hr>
-{% endfor %}
+        <h2>Контакты</h2>
+
+        <h3>Дворцовая наб., 32, Санкт-Петербург, 190000</h3>
+        <h3>т.(812)-9871498</h3>
+        <h3>E-mail:<a href="https://mail.ru/">9871498@mail.ru</a></h3>
+        
         
         
       </div>
@@ -43,16 +46,19 @@
     <div id="secondaryContent">
     
       <ul>
-        <li><a href="http://web-mastery.info/">Sagittis Bibendum Erat</a></li>
-        <li><a href="http://web-mastery.info/">Malesuada Turpis</a></li>
-        <li><a href="http://web-mastery.info/">Quis Gravida Massa</a></li>
-        <li><a href="http://web-mastery.info/">Inerat Viverra Ornare</a></li>
+        <hr color="#000080">
+        <li><a href="http://www.supcourt.ru/vs_cases3.php">Верховный суд</a></li>
+        <hr color="#000080">
+        <li><a href="https://sudrf.ru/">ГАС правосудие</a></li>
+        <hr color="#000080">
+        <li><a href="http://www.arbitr.ru/">Федеральные Арбитражные Суды РФ</a></li>
+        <hr color="#000080">
       </ul>
     </div>
     <div class="clear"></div>
   </div>
   <div id="footer">
-    <p>Copyright &copy; 2006 Sitename.com. Designed by <a href="http://www.freecsstemplates.org">Free CSS Templates</a></p>
+    <p>&copy; Untitled. Design:<a href="">VorazH-studio </a></p>
   </div>
 </div>
 </body>
