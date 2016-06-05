@@ -1,4 +1,4 @@
- {% extends 'blog/base.html' %}
+ {% extends 'blog/articles.html' %}
     {% block content %}
         {% for post in posts %}
             <div class="post">
@@ -7,6 +7,8 @@
                 </div>
                 <h1><a href="">{{ post.title }}</a></h1>
                 <p>{{ post.text|linebreaks }}</p>
+                <hr>
             </div>
+            
         {% endfor %}
     {% endblock content %}

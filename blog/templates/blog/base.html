@@ -9,7 +9,8 @@
 
 <html>
     <head>
-        <title>Aerial by HTML5 UP</title>
+        <title>JURIST</title>
+
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -17,7 +18,7 @@
         <!--[if lte IE 8]><link rel="stylesheet" href="{% static "css/ie8.css" %}" /><![endif]-->
         <!--[if lte IE 9]><link rel="stylesheet" href="{% static "css/ie9.css" %}" /><![endif]-->
     </head>
-    <body class="loading">
+   <body class="loading">
         <div id="wrapper">
             <div id="bg"></div>
             <div id="overlay"></div>
@@ -25,28 +26,37 @@
 
                 <!-- Header -->
                     <header id="header">
+                    <a name="top"></a>
                         <h1>Юридические Услуги</h1>
+
                         <p><a href="http://www.supcourt.ru/vs_cases3.php">Верховный суд</a> &nbsp;&bull;&nbsp; <a href="https://sudrf.ru/">ГАС правосудие</a> &nbsp;&bull;&nbsp; <a href="http://www.arbitr.ru/">Федеральные Арбитражные Суды РФ</a></p>
+                        {{ name }}
+
+
                         <nav>
                             <ul>
-                                <li><a href="index" class="icon fa-home"><span class="label">Домой</span></a></li>
-                                <li><a href="edit" class="icon fa-pencil-square-o"><span class="label">Блог</span></a></li>
-                                <li><a href="#" class="icon fa-phone"><span class="label">Контакты</span></a></li>
-                                <li><a href="#" class="icon fa-picture-o"><span class="label">Галерея</span></a></li>
-                                <li><a href="#" class="icon fa-balance-scale"><span class="label">Услуги</span></a></li>
+                                <li><a href="/" class="icon fa-home"><span class="label">Домой</span></a></li>
+                                <li><a href="/edit/" class="icon fa-pencil-square-o"><span class="label">Блог</span></a></li>
+                                <li><a href="/contacts/" class="icon fa-phone"><span class="label">Контакты</span></a></li>
+                                <li><a href="/galerey/" class="icon fa-picture-o"><span class="label">Галерея</span></a></li>
+                                <li><a href="/services/" class="icon fa-balance-scale"><span class="label">Услуги</span></a></li>
                             </ul>
                         </nav>
                     </header>
-                    {% block content %}
-                {% endblock %}
+
+
+                    
 
                 <!-- Footer -->
                     <footer id="footer">
+
                         <span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">VorazH-studio </a>.</span>
                     </footer>
 
+
             </div>
         </div>
+
         <!--[if lte IE 8]><script src="{% static "js/ie/respond.min.js" %}"></script><![endif]-->
         <script>
             window.onload = function() { document.body.className = ''; }
